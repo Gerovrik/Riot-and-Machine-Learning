@@ -1,0 +1,72 @@
+
+/* NavBar */
+a.navbar-brand{
+  margin-left: 12px;
+  padding: 12px;
+  background-color:rgb(44, 89, 116);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 30px;
+}
+a.btn{
+  color: rgb(11, 12, 12);
+  background-color: rgb(148, 151, 151);
+}
+/* --------------------------------- */
+
+
+
+/* Body format */
+
+.display-3{
+  text-align: center;
+  font-family: Georgia, serif;
+  color: rgb(148, 151, 151);
+}
+h3{
+  color: rgb(10, 48, 35);
+  background-color: gray;
+  font-size: 30px;
+  text-align: center;
+  max-width: auto;
+  border-radius: 10px;
+}
+body{
+  background-color: rgba(39, 43, 43, 0.925);
+}
+
+.jumbotron{
+  background-color:rgb(44, 89, 116);
+}
+
+/* --------------------------------- */
+
+
+
+
+
+/* Line format*/
+.lead{
+  text-align: center;
+  color: rgb(148, 160, 158);
+}
+/* --------------------------------- */
+
+
+
+/* Background of Whole HTML page */
+html{
+  background-color: #343a40!important;
+}
+/* --------------------------------- */
+
+
+/* footer */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+/* --------------------------------- */
