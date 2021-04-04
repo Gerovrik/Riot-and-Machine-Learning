@@ -1,15 +1,13 @@
-Precent team  pick,Type,win,72% reliability
-20.55%,Assassin,,
-15.82%,Fighter,,
-18.99%,Mage,,
-14.65%,Marksman,,
-13.54%,Support,,
-16.42%,Tank,,
-99.96%,,,
-9.44%,vs Assassin,lose,
-8.39%,vs Fighter,,NOTE TO SELF  multiply by two using sum
-9.57%,vs Mage,,
-7.28%,vs Marksman,,
-6.97%,vs Support,,
-8.37%,vs Tank,,
-50.02%,,,
+Precent team  pick,,win,72% reliability,,,,,,,Type,Precent team  pick
+20.55%,,,,,,,,,Win,Assassin,20.55%
+15.82%,,,,,,,,,,Fighter,15.82%
+18.99%,,,,,,,,,,Mage,18.99%
+14.65%,,,,,,,,,,Marksman,14.65%
+13.54%,,,,,,,,,,Support,13.54%
+16.42%,,,,,,,,,,Tank,16.42%
+18.88%,,lose,,,,,,,Lose,vs Assassin,18.88%
+16.78%,,,NOTE TO SELF  multiply by two using sum,,,,,,,vs Fighter,16.78%
+19.14%,,,,,,,,,,vs Mage,19.14%
+14.56%,,,,,,,,,,vs Marksman,14.56%
+13.94%,,,,,,,,,,vs Support,13.94%
+16.74%,,,,,,,,,,vs Tank,16.74%

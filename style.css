@@ -28,7 +28,7 @@ a.btn{
   color: rgb(148, 151, 151);
 }
 h3{
-  color: rgb(10, 48, 35);
+  color: black;
   background-color: gray;
   font-size: 30px;
   text-align: center;
@@ -39,6 +39,8 @@ body{
   background-color: rgba(39, 43, 43, 0.925);
 }
 
+
+
 .jumbotron{
   background-color:rgb(44, 89, 116);
   text-align: center;
@@ -46,14 +48,33 @@ body{
 
 /* --------------------------------- */
 
+/* image modification */
+.column {
+  float: left;
+  width: 45.0%;
+  padding: 5px;
+}
 
-
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/* --------------------------------- */
 
 
 /* Line format*/
 .lead{
   text-align: center;
   color: rgb(148, 160, 158);
+  
+}
+.vl {
+  margin-left: 15px;
+  margin-right: 15px;
+  border-left: 1px solid #212529;
+  height: auto;
 }
 /* --------------------------------- */
 
