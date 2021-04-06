@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
- <!-- #-------------------------- Head --------------------------------------# -->
- <head>
+<!-- #-------------------------- Head --------------------------------------# -->
+
+<head>
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -57,7 +58,7 @@
   </nav>
   <!-- #--------------------------Navbar--------------------------------------# -->
 
- 
+
   <!-- #--------------------------Main--------------------------------------# -->
 
 
@@ -65,46 +66,65 @@
     <hr class="my-4">
     <h1 class="display-3">Looking at the Numbers of the "Meta"</h1>
     <hr class="my-4">
+    
+
+
     <p style="text-align:center;">
-      <img src="Resources\Chart_win_lose.png" alt="w__l_chart" style="width:75%" >
+      <img src="data_lol\Role Picks.png" alt="w__l_chart" style="width:75%" style="height: auto;">
       <hr class="my-4">
     </p>
-    <div class="row" style= "margin-left: auto;">
-    <div class="column">
-      <h3>Winners Meta ?</h3>
-      <p class="lead"> We saw a 72% prediction rate with the machine learning. We can see that the winners side tended to have more assassin picks with less Fighter and Mage picks. 
+    
+    <p class="lead"> The image above shows us the average pick rate of each role for the winning and losing team. This
+      information is useful to us, however it does not show the complete story on its own.</p>
+    <br>
+    <div class="row" style="margin-left: auto;">
+      <div class="column">
+        <h3>Winners Meta ?</h3>
+        <p class="lead"> The winning team tended to value marksmen, fighters, and assassins more than the losing team.
+        </p>
+      </div>
+      <div class="vl"></div>
+      <div class="column">
+        <h3>Losers Meta ?</h3>
+        <p class="lead"> The losing team tended to over-value support and mages relative to the winning team.</p>
+      </div>
+      <hr class="my-3">
+      <br>
+      <p class="lead"> Although this data gives us a decent idea of the current meta of League of Legends, it doesn't
+        tell us the full story. This data can't tell us what specific line up will be effective against another. To
+        answer this question, we used machine learning.</p>
+      <br>
+      <br>
+      <p style="text-align:center;">
+        <img src="Resources\Chart_win_lose.png" alt="w__l_chart" style="width:75%">
+        <hr class="my-4">
       </p>
-    </div>
-    <div class="vl"></div>
-    <div class="column">
-      <h3>Losers Meta ?</h3>
-      <p class="lead"> Here we see the loseing teams tended to have more mages and fighters. Looking at this I would assume the fighter roles seem underpowered, 
-        while mages seem to have varible effect rate on the match.  </p>
-    </div>
-    <hr class="my-3">
-    <br>
-    <p class="lead"> One noticable similarity was the support, marksmen, and tank picks. It stayed roughly the same though out mutiple tests.
-    An assumtion to be made would be They are nesssary but do not have the impact of win or loss rate that other roles may have.
-    <br>
-    <br>
-      <img src="data_lol\Role Picks.png" alt="w__l_chart" style="width:75%" style="height: auto;" >
-    </p>
-    <hr class="my-3">
-    <p class="lead"> Here we see the choices of role based on character selection from 300 matches. Oddly Mage and Fighter are the top two picks. 
-      Which would suggest player skill level seems to effect the Mages while fighters just seem underpowered.   </p>
+
+      <hr class="my-3">
+      <p class="lead"> Our machine learning algorithm was able to predict the winner of a match with 72% accuracy. The
+        image above show the prediction strength for each variable (doubled to show the effect for each team). We can
+        see here that the most important roles for predicting the outcome of a game are the Assassin and Mage. Using our
+        knowledge from the first image, we can conclude that the undervalueing of assassins and the overvalueing of
+        mages are the two biggest factors in predicting the outcome of a game.</p>
     </div>
     <hr class="my-3">
   </div>
-  
+
   <!-- #--------------------------Main--------------------------------------# -->
- 
+
 
   <!-- #--------------------------Scripts--------------------------------------# -->
 
   <script src="https://d3js.org/d3.v6.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
   <!-- #--------------------------Scripts--------------------------------------# -->
 </body>
 
