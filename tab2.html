@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
- <!-- #-------------------------- Head --------------------------------------# -->
- <head>
+<!-- #-------------------------- Head --------------------------------------# -->
+
+<head>
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -57,7 +58,7 @@
   </nav>
   <!-- #--------------------------Navbar--------------------------------------# -->
 
- 
+
   <!-- #--------------------------Main--------------------------------------# -->
 
 
@@ -65,46 +66,65 @@
     <hr class="my-4">
     <h1 class="display-3">Looking at the Numbers of the "Meta"</h1>
     <hr class="my-4">
-    <p style="text-align:center;">
-      <img src="Resources\Chart_win_lose.png" alt="w__l_chart" style="width:75%" >
-      <hr class="my-4">
+    
+
+
+    <p>
+      <div class='tableauPlaceholder' id='viz1617745635719' style='position: relative; ;'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;le&#47;league_project&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  width='75%' height='50%' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='league_project&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;le&#47;league_project&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1617745635719');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='550px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>      <hr class="my-4">
+      
     </p>
-    <div class="row" style= "margin-left: auto;">
-    <div class="column">
-      <h3>Winners Meta ?</h3>
-      <p class="lead"> We saw a 72% prediction rate with the machine learning. We can see that the winners side tended to have more assassin picks with less Fighter and Mage picks. 
+    
+    <p class="lead"> The image above shows us the average pick rate of each role for the winning and losing team. This
+      information is useful to us, however it does not show the complete story on its own.</p>
+    <br>
+    <div class="row" style="margin-left: auto;">
+      <div class="column">
+        <h3>Winners Meta ?</h3>
+        <p class="lead"> The winning team tended to value marksmen, fighters, and assassins more than the losing team.
+        </p>
+      </div>
+      <div class="vl"></div>
+      <div class="column">
+        <h3>Losers Meta ?</h3>
+        <p class="lead"> The losing team tended to over-value support and mages relative to the winning team.</p>
+      </div>
+      <hr class="my-3">
+      <br>
+      <p class="lead"> Although the previous data gives us a decent idea of the current meta of League of Legends, it doesn't
+        show us the full picture. This data can't tell us what specific line up will be effective against another. To
+        answer this question, we used machine learning.</p>
+      <br>
+      <br>
+      <p style="text-align:center;">
+        <img src="Resources\Chart_win_lose.png" alt="w__l_chart" style="width:75%">
+        <hr class="my-4">
       </p>
-    </div>
-    <div class="vl"></div>
-    <div class="column">
-      <h3>Losers Meta ?</h3>
-      <p class="lead"> Here we see the loseing teams tended to have more mages and fighters. Looking at this I would assume the fighter roles seem underpowered, 
-        while mages seem to have varible effect rate on the match.  </p>
-    </div>
-    <hr class="my-3">
-    <br>
-    <p class="lead"> One noticable similarity was the support, marksmen, and tank picks. It stayed roughly the same though out mutiple tests.
-    An assumtion to be made would be They are nesssary but do not have the impact of win or loss rate that other roles may have.
-    <br>
-    <br>
-      <img src="data_lol\Role Picks.png" alt="w__l_chart" style="width:75%" style="height: auto;" >
-    </p>
-    <hr class="my-3">
-    <p class="lead"> Here we see the choices of role based on character selection from 300 matches. Oddly Mage and Fighter are the top two picks. 
-      Which would suggest player skill level seems to effect the Mages while fighters just seem underpowered.   </p>
+
+      <hr class="my-3">
+      <p class="lead"> Our machine learning algorithm was able to predict the winner of a match with 72% accuracy. The
+        image above show the prediction strength for each variable (doubled to show the effect for each team). We can
+        see here that the most important roles for predicting the outcome of a game are the Assassin and Mage. Using our
+        knowledge from the first image, we can conclude that the undervalueing of assassins and the overvalueing of
+        mages are the two biggest factors in predicting the outcome of a game.</p>
     </div>
     <hr class="my-3">
   </div>
-  
+
   <!-- #--------------------------Main--------------------------------------# -->
- 
+
 
   <!-- #--------------------------Scripts--------------------------------------# -->
 
   <script src="https://d3js.org/d3.v6.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
   <!-- #--------------------------Scripts--------------------------------------# -->
 </body>
 
