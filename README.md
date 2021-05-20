@@ -1,4 +1,4 @@
-# FinalGroup
+# Riot-and-Machine-Learning
 
 This is a poject centered around the idea of using machine learning and Herkou.
 
